@@ -5,7 +5,7 @@ function takeANumber(line,name){
   return message
 }
 
-function nowServing(katzDeliLine){
+function nowServing(line){
   var next =  line.shift
   if (next === 'string'){
     return `Currently serving ${next}.`
