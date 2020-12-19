@@ -16,7 +16,10 @@ function nowServing(line){
 
 function currentLine(line){
   if (typeof(next) === 'string'){
-    return line(katzDeliLine)
+    let message = "The line is currently: "
+    lineArr.forEach(function(item, index) {
+      if (index === (lineArr.length - 1)) {
+        message += (index + 1 + ". " + item)
   } else {
     return "The line is currently empty."
   }
