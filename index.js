@@ -17,8 +17,8 @@ function nowServing(line){
 function currentLine(line){
   if (typeof(next) === 'string'){
     let message = "The line is currently: "
-    lineArr.forEach(function(item, index) {
-      if (index === (lineArr.length - 1)) {
+    line.forEach(function(item, index) {
+      if (index === (line.length - 1)) {
         message += (index + 1 + ". " + item)
   } else {
     return "The line is currently empty."
