@@ -6,7 +6,7 @@ function takeANumber(line,name){
 }
 
 function nowServing(line){
-  var next =  line.shift
+  var next =  line.shift()
   if (typeof(next) === 'string'){
     return `Currently serving ${next}.`
   } else {
