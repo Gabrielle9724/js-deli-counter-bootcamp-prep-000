@@ -1,3 +1,3 @@
-function takeANumber(num,name){
-  array.push('Welcome, Ada. You are number 1 in line.')
+function takeANumber(line,name){
+  line.push(name)
 }
