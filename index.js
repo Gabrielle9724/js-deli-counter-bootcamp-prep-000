@@ -7,7 +7,7 @@ function takeANumber(line,name){
 
 function nowServing(line){
   var next =  line.shift
-  if (next === 'string'){
+  if (typeof(next) === 'string'){
     return `Currently serving ${next}.`
   } else {
     return "There is nobody waiting to be served!"
