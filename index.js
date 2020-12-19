@@ -16,7 +16,12 @@ function nowServing(line){
 
 function currentLine (line) {
   var message = "The line is currently:"
-  if (typeof(line) === 'string'){
-    return message + `${name}`    
+  if (line.length === 0){
+    return "The line is currently empty."
+  } else {
+    let num = 1
+    while (num < line.length){
+      line.push(`${num}. ${name}`)
+    }
   }
 }
