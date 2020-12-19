@@ -13,3 +13,10 @@ function nowServing(line){
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine (line) {
+  var message = "The line is currently:"
+  if (typeof(line) === 'string'){
+    return message + `${name}`    
+  }
+}
