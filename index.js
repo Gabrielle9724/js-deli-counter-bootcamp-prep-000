@@ -13,14 +13,3 @@ function nowServing(line){
     return "There is nobody waiting to be served!"
   }
 }
-
-function currentLine(line){
-  if (typeof(next) === 'string'){
-    let message = "The line is currently: "
-    line.forEach(function(item, index) {
-      if (index === (line.length - 1)) {
-        message += (index + 1 + ". " + item)
-  } else {
-    return "The line is currently empty."
-  }
-}
